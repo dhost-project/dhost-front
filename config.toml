@@ -37,10 +37,18 @@ footerQuicklinkTitle = "FRANCAIS Quick links"
 footerAboutTitle = "FRANCAIS About"
 footerSubscribeTitle = "FRANCAIS Subscribe"
 
+
+# Navbar
+[Languages.fr.params.navbar]
+dashboard = "TABLO"
+about = "About"
+discover = "Discover"
+contact = "Contact"
+
 # Hero Area Section
 [Languages.fr.params.hero]
 enable  = true
-heading = "FRANCAIS We love to make brands grow"
+heading = "FRANCAIS We love to make brands grow and break dem after"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
 button  = true
 btnText = "Know More"
@@ -91,7 +99,7 @@ btnText = "Nous contacter"
 [Languages.en]
 weight = 2
 languageCode = "en-us"
-title = "Example site multi-language"
+title = "Example site multi-language tototo"
 dateFormat = "January 2, 2006"
 home = "EN Home"
 logo = "images/logo.png"
@@ -109,14 +117,24 @@ footerSubscribeTitle = "Subscribe"
 enable = false
 expire_days = 2
 
+# Navbar
+[Languages.en.params.navbar]
+dashboard = "Dashboard"
+about = "About"
+discover = "Discover"
+contact = "Contact"
+
+
 # Hero Area Section
 [Languages.en.params.hero]
 enable  = true
-heading = "We love to make brands grow"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+heading = "Decentralized hosting for your website"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 button  = true
-btnText = "Know More"
-btnURL  = "https://themefisher.com/"
+btnGetStartedText = "Get Started"
+btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnLearnMoreText = "Learn More"
+btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
