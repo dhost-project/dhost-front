@@ -56,44 +56,6 @@ btnURL  = "https://themefisher.com/"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
-# About 2 Section
-[Languages.fr.params.aboutSm]
-enable  = true
-title   = "FRANCAIS We have explored the digital landscape with passion for a long time"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
-
-# Blog Section On Homepage
-[Languages.fr.params.blog]
-enable  = true
-topTitle= "OUR UNTOLD STORY"
-title   = "FRANCAIS Blog."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-
-# Contact Section
-[Languages.fr.params.contact]
-enable  = true
-topTitle= "DROP US A NOTE"
-title   = "FRANCAIS Contact Us."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-address = "14/05, Stockhome <br> Victori Palace , United States"
-phone   = "(03) 9283 2617"
-fax     = "+61 3827 3590"
-facebook= "https://www.facebook.com/"
-twitter = "https://twitter.com/"
-linkedin= "https://www.linkedin.com/"
-dribbble= "https://dribbble.com/"
-instagram= "https://www.instagram.com/"
-mapLatitude = "51.507351"
-mapLongitude= "-0.127758"
-mapMarker   = "images/marker.png"
-
-# Call to Action Section on About Page
-[Languages.fr.params.cta]
-enable  = true
-bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "FRANCAIS Let's Create Something Together"
-subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-btnText = "Nous contacter"
 
 ############# 2 - Site en ENGLISH
 [Languages.en]
@@ -137,6 +99,12 @@ btnLearnMoreText = "Learn More"
 btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+
+# Frameworks Area Section
+[Languages.en.params.frameworks]
+imagesFirstRow = ["wordpress.png", "jekyll.png", "publii.jpg", "docusaurus.svg", "11ty.png", "nuxtjs.png"]
+imagesSecondRow = ["angular-logo.png", "react.png", "vue.png", "hugo.jpg", "gatsby.jpg", "siteleaf.png"]
 
 # About 2 Section
 [Languages.en.params.aboutSm]
