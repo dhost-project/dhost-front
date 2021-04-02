@@ -19,8 +19,8 @@
                 {{ if .Site.Params.hero.button }}
                 <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
                     <li class="list-inline-item">
-                        <a href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}" target="_blank" class="btn btn-main">{{ with .Site.Params.hero.btnGetStartedText }}{{.}}{{ end }}</a>
-                        <a href="{{ with .Site.Params.hero.btnLearnMoreURL }}{{.}}{{ end }}" target="_blank" class="btn btn-main">{{ with .Site.Params.hero.btnLearnMoreText }}{{.}}{{ end }}</a>
+                        <a href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}" target="_blank" class="getStarted ripple">{{ with .Site.Params.hero.btnGetStartedText }}{{.}}{{ end }}</a>
+                        <a href="{{ with .Site.Params.hero.btnLearnMoreURL }}{{.}}{{ end }}" target="_blank" class="getStarted ripple">{{ with .Site.Params.hero.btnLearnMoreText }}{{.}}{{ end }}</a>
                     </li>
                 </ul>
                 {{ end }}
