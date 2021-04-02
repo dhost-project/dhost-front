@@ -1,7 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "DHost"
-theme = "navigator-hugo"
 enableRobotsTXT = true
 enableGitInfo = false
 

@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700%22");
+body {
+  line-height: 1.4;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  color: #9a9a9a;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.getStarted {
+  position: relative;
+  overflow: hidden;
+  background-color: #6075E5CC;
+  border: none;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 3px;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.5s;
+}
+
+.ripple:hover {
+  background-color: #8095EACC;
+  background-image: radial-gradient(circle, transparent 1%, #8095EACC);
+  background-position: center;
+  background-size: 15000%;
+}
+
+.ripple:active {
+  transition: background 0s;
+  background-color: #EEE;
+  background-size: 100%;
+}
+
+.ripple:active {
+  transition: background 0s;
+  background-color: #EEE;
+  background-size: 100%;
+}
+
+.btn-main, .btn-main-sm {
+  background-color: #21D6BF;
+  background-image: linear-gradient(100deg, #f9643d, #fe2a77);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.btn-main:hover, .btn-main-sm:hover {
+  color: #fff;
+}
+
+.btn-main-sm {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.btn-transparent {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.btn-transparent:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
+.navigation {
+  transition: .3s all;
+  background: #1f2532;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  transition: all 0.2s ease-out 0s;
+  padding-bottom: 10px 0;
+  padding-top: 10px 0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.navigation .navbar-nav > li.active a {
+  color: #fff;
+}
+
+
+
+.navigation .dropdown .dropdown-item:hover {
+  background: transparent;
+  color: #f0326b;
+}
+
+.navigation .dropdown .dropdown-menu {
+  border-radius: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  background-color: #000;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out,-webkit-transform 0.3s;
+  transition: transform 0.3s,opacity 0.3s ease-in-out;
+  transition: transform 0.3s,opacity 0.3s ease-in-out,-webkit-transform 0.3s;
+}
+
+.navigation .dropdown:hover .dropdown-menu {
+  transition: opacity 0.3s ease-in-out,-webkit-transform 0.3s;
+  transition: transform 0.3s,opacity 0.3s ease-in-out;
+  transition: transform 0.3s,opacity 0.3s ease-in-out,-webkit-transform 0.3s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 8px 0;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+}
+
+.hero-area {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1f2532;
+}
+
+
+/*=================================================================
+  Process section
+==================================================================*/
+
+.process {
+  background-color: #EEE;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px;
+  padding-bottom: 100px;
+}
+
+.process-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.process-item {
+  padding: 20px 10px 20px 10px;
+  margin: 0px 100px 0px 30px;
+  background: #FFF;
+  border: 1px solid #DDD;
+  box-shadow: 1px 1px 1px #777;
+  justify-content: left;
+  border-radius: 10px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+.process-item:nth-child(3) {
+  box-shadow: -1px 1px 1px #777;
+  text-align: right;
+  margin: 0px 30px 0px 100px;
+}
+
+.process-list > .svg-link {
+  height: auto; 
+  width: -moz-calc(100% - 100px);
+  width: -webkit-calc(100% - 100px);
+  width: -o-calc(100% - 100px);
+  width: calc(100% - 100px);
+  margin: 0 50px 0 50px; 
+  justify-content: center; 
+  text-align: center;
+}
+
+.process-list > .svg-link:nth-child(4) {
+  transform: scaleX(-1);
+}
+
+.process-item > .item-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.process-item:nth-child(3) > .item-title {
+  justify-content: right;
+}
+
+.process-item > .item-title h3 {
+  display: inline-block;
+  margin: 0;
+  margin: 0 8px;
+}
+
+.process-item > .upload-txt {
+  margin-left: 33px;
+}
+
+.process-item > .upload-content {
+  display: flex; 
+  justify-content: space-around;
+}
+
+.upload-content > .upload-image {
+  height: 80px;
+}
+
+.process-item > .build-txt {
+  margin-right: 33px;
+}
+
+.process-item > .build-img {
+  width: calc(100% - 22px); 
+  margin-right: 33px;
+}
+
+.process-item > .deploy-txt {
+  margin-left: 33px;
+}
+
+.process-getStarted {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* ANIMATION */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/*=================================================================
+  Why Dhost section
+==================================================================*/
+
+.frameworks-partial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.frameworks-partialContent > .frameworks-title {
+  text-align: center;
+}
+
+/*=================================================================
+  Why Dhost section
+==================================================================*/
+
+
+.whydhost-partial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.whydhost-partialContent > .whydhost-title {
+  text-align: center;
+}
+.whydhost-mosaicContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.whydhost-mosaicContainer > .whydhost-mosaicElement {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+}
+.whydhost-mosaicElement > .whydhost-image {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.whydhost-mosaicElement:hover > .whydhost-image {
+  display: none;
+}
+.whydhost-mosaicElement > .whydhost-text {
+  display: none;
+}
+.whydhost-mosaicElement:hover > .whydhost-text {
+  display: flex;
+  text-align: center;
+}
+
+
+/*=================================================================
+  Deploy section
+==================================================================*/
+
+.deploy-partial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.deploy-partial > .card {
+  flex: 0 0 30%;
+  padding: 2em;
+}
+.card > .card-title {
+  text-align: center;
+}
+.card > .card-container {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+/*=================================================================
+  Footer section
+==================================================================*/
+.top-footer {
+  background-color: #222222;
+  border-top: 1px solid #404040;
+  padding: 100px 0 80px;
+}
+
+.top-footer h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.top-footer p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #bdbdbd;
+  font-weight: 300;
+  padding-right: 20px;
+}
+
+.top-footer li a {
+  font-size: 13px;
+  line-height: 30px;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: color .3s;
+  font-family: "Titillium Web", sans-serif;
+  display: block;
+}
+
+.top-footer li a:hover {
+  color: #f0326b;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #1b1b1b;
+  border-top: 1px solid #2c2c2c;
+  padding: 30px 0;
+}
+
+.footer-bottom h5 {
+  font-size: 12px;
+  line-height: 1;
+  color: #888888;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+}
+
+.footer-bottom h6 {
+  font-size: 11px;
+  line-height: 15px;
+  color: #888888;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.footer-bottom p {
+  color: #656565;
+}
+
+.footer-bottom a {
+  color: #f0326b;
+}
+
+.subscribe-form .form-control {
+  border-radius: 0;
+}
+
+.page-404 {
+  height: 100vh;
+}
+
+.page-404 h1 {
+  font-size: 200px;
+}
