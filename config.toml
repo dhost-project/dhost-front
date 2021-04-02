@@ -25,7 +25,7 @@ description = "Dhost"
 weight = 1
 languageCode = "fr-fr"
 title = "Dhost"
-dateFormat = "2 January 2006"
+dateFormat = "20 March 2021"
 
 home = "FR Home"
 logo = "images/logo.png"
@@ -47,6 +47,10 @@ btnText = "Know More"
 btnURL  = "https://themefisher.com/"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+# Process Section
+[Languages.fr.params.process]
+image = "images/folder.svg"
 
 # About 2 Section
 [Languages.fr.params.aboutSm]
@@ -119,6 +123,10 @@ btnText = "Know More"
 btnURL  = "https://themefisher.com/"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+# Process Section
+[Languages.en.params.process]
+image = "images/folder.svg"
 
 # About 2 Section
 [Languages.en.params.aboutSm]
