@@ -4,7 +4,14 @@
             <h2>Many sites and frameworks are supported</h2>
         </div>
         <div class="row">
-            
+            {{ range $framework := .Site.Params.frameworks.imagesFirstRow }}
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/imgs/frameworks/{{ . }}" width="auto"  height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title></img>
+            {{ end }}
+        </div>
+        <div class="row">
+            {{ range $framework := .Site.Params.frameworks.imagesSecondRow }}
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/imgs/frameworks/{{ . }}" width="auto"  height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title></img>
+        {{ end }}
         </div>
     </div>
 </div>

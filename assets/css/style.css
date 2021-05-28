@@ -3,6 +3,8 @@ body {
   line-height: 1.4;
   font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 p {
@@ -299,7 +301,47 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*=================================================================
-  Why Dhost section
+  IPFS explanation section
+==================================================================*/
+
+.ipfs-partial {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4em;
+  padding-bottom: 6em;
+}
+.ipfs-partialContent {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.ipfs-partialContent > .ipfs-title {
+  flex: 0 0 80%;
+  text-align: left;
+  font-size: 1.5em;
+}
+.ipfs-mainContent {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ipfs-leftContent {
+  flex: 0 0 40%;
+  text-align: left;
+}
+.ipfs-rightContent {
+  flex: 0 0 40%;
+  text-align: right;
+}
+
+/*=================================================================
+  Framework section
 ==================================================================*/
 
 .frameworks-partial {
@@ -307,9 +349,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 5.5em;
 }
 .frameworks-partialContent > .frameworks-title {
+  font-size: 1.5em;
+  margin-bottom: 2.5em;
   text-align: center;
+}
+
+.frameworks-partialContent > .row:nth-of-type(1n + 1) {
+  margin-bottom: 2em;
 }
 
 /*=================================================================
@@ -318,23 +368,29 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .whydhost-partial {
+  background-color: #1f2532;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 6em;
 }
 .whydhost-partialContent > .whydhost-title {
+  color: white;
+  font-size: 1.5em;
   text-align: center;
+  margin-bottom: 2em;
 }
 .whydhost-mosaicContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
 }
 .whydhost-mosaicContainer > .whydhost-mosaicElement {
+  background-color: white;
+  flex: 0 0 28%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -342,6 +398,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   height: 150px;
   border: 1px solid black;
+  border-radius: 15px;
+}
+.whydhost-mosaicContainer > .whydhost-mosaicElement:nth-of-type(3) {
+  margin-bottom: 3em;
 }
 .whydhost-mosaicElement > .whydhost-image {
   display: flex;
@@ -366,19 +426,27 @@ h1, h2, h3, h4, h5, h6 {
 ==================================================================*/
 
 .deploy-partial {
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 6em;
 }
 .deploy-partial > .card {
+  text-align: center;
+  background: #FFF;
+  border: 1px solid #DDD;
+  box-shadow: 1px 1px 1px #777;
+  border-radius: 10px;
   flex: 0 0 30%;
-  padding: 2em;
+  padding: 3em 7em 5em 7em;
 }
 .card > .card-title {
-  text-align: center;
+  font-size: 1.5em;
+  justify-content: left;
+  margin-bottom: 3.5em;
 }
 .card > .card-container {
   margin-top: 2em;

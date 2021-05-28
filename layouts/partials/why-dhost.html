@@ -4,14 +4,16 @@
             <h2>Why Dhost ?</h2>
         </div>
         <div class="whydhost-mosaicContainer">
+            {{ range $perk := .Site.Params.whyDhost.perks }}
             <div class="whydhost-mosaicElement">
                 <div class="whydhost-image">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/imgs/angular-logo.png" width="100"  height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title></img>
+                    <img src="/imgs/whyDhost/{{ $perk.image }}" width="100"  height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>{{ $perk.name }}</title></img>
                 </div>
                 <div class="whydhost-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    {{ $perk.text }}
                 </div>           
             </div>
+            {{ end }}
         </div>
     </div>
 </div>
