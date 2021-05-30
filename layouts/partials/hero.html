@@ -1,31 +1,58 @@
-{{ if .Site.Params.hero.enable }}
-{{ "<!-- Hero Area -->" | safeHTML }}
+{{ if .Site.Params.hero.enable }} {{ "<!-- Hero Area -->" | safeHTML }}
 <section class="hero-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                    {{ with .Site.Params.hero.heading }}
-                        <span style="font-size: 3.5em; color: #fff;">{{ . }}</span>
-                    {{ end }}
-            </div>
-            <div class="col-md-9">
-                {{ with .Site.Params.hero.description }}
-                <p>{{ . }}</p>
-                {{ end }}
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {{ with .Site.Params.hero.heading }}
+        <span style="font-size: 3.5em; color: #fff">{{ . }}</span>
+        {{ end }}
+      </div>
+      <div class="col-md-9">
+        {{ with .Site.Params.hero.description }}
+        <p>{{ . }}</p>
+        {{ end }}
+      </div>
 
-
-            <div class="col-md-6">
-                {{ if .Site.Params.hero.button }}
-                <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
-                    <li class="list-inline-item">
-                        <a href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}" target="_blank" class="getStarted ripple">{{ with .Site.Params.hero.btnGetStartedText }}{{.}}{{ end }}</a>
-                        <a href="{{ with .Site.Params.hero.btnLearnMoreURL }}{{.}}{{ end }}" target="_blank" class="getStarted ripple">{{ with .Site.Params.hero.btnLearnMoreText }}{{.}}{{ end }}</a>
-                    </li>
-                </ul>
-                {{ end }}
-            </div>
-        </div>
+      <div class="col-md-6">
+        {{ if .Site.Params.hero.button }}
+        <ul
+          class="list-inline wow fadeInUp"
+          data-wow-duration=".5s"
+          data-wow-delay=".7s"
+        >
+          <li class="list-inline-item">
+            <a
+              href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}"
+              target="_blank"
+              class="getStarted ripple"
+              >{{ with .Site.Params.hero.btnGetStartedText }}{{.}}{{ end }}</a
+            >
+            <a
+              href="{{ with .Site.Params.hero.btnLearnMoreURL }}{{.}}{{ end }}"
+              target="_blank"
+              class="getStarted ripple"
+              >{{ with .Site.Params.hero.btnLearnMoreText }}{{.}}{{ end }}</a
+            >
+          </li>
+        </ul>
+        {{ end }}
+      </div>
     </div>
+  </div>
+
+  <div id="particles-js" class="hero-background"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+        /* ========================================================================= */
+  /*	Particles
+		/* =========================================================================  */
+
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+
+		particlesJS.load("particles-js", "/particles.json", function () {
+		console.log("callback - particles.js config loaded");
+  })
+  </script>
 </section>
 {{ end }}
