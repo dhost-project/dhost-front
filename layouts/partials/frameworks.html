@@ -6,14 +6,14 @@
         <table style="margin: auto;">
             <tr>
                 {{ range $framework := .Site.Params.frameworks.imagesFirstRow }}
-                <td style="width: 100px;height: 100px;margin-right: 309px; padding: 0 15px;">
+                <td class="framework-logo">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/imgs/frameworks/{{ . }}" width="100"  maxheight="100" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title></img>
                 </td>
                 {{ end }}
             </tr>
             <tr>
                 {{ range $framework := .Site.Params.frameworks.imagesSecondRow }}
-                <td style="width: 100px;height: 100px;margin-right: 309px; padding: 0 15px;">
+                <td class="framework-logo">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/imgs/frameworks/{{ . }}" width="100"  maxheight="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title></img>
                 </td>
                 {{ end }}

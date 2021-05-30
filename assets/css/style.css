@@ -100,15 +100,13 @@ ul {
 }
 
 nav {
-  height: 75px !important;
   position: fixed;
   z-index: 2;
   width: 100%;
 }
 
-.navbar-brand {
-  height: 20px;
-  padding: 8px 0;
+.navbar {
+  padding: 10px 18px;
 }
 
 .navbar-brand h1 {
@@ -229,7 +227,7 @@ nav {
   margin-bottom: 8px;
 }
 
-.process-item > .item-title {
+.process-item:nth-child(3) > .item-title {
   justify-content: right;
 }
 
@@ -361,19 +359,20 @@ nav {
   font-size: 1.5em;
 }
 .ipfs-mainContent {
-  flex: 0 0 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  text-align: justify;
+}
+.ipfs-mainContent > p {
+  flex-wrap: wrap;
+
+  color: #444;
+  vertical-align: middle;
 }
 .ipfs-leftContent {
-  flex: 0 0 40%;
-  text-align: left;
-}
-.ipfs-rightContent {
-  flex: 0 0 40%;
-  text-align: right;
+  float: left;
+  padding: 0 2em 2em;
 }
 
 /*=================================================================
@@ -397,6 +396,13 @@ nav {
 
 .frameworks-partialContent > .row:nth-of-type(1n + 1) {
   margin-bottom: 2em;
+}
+
+.framework-logo {
+  width: 150px;
+  height: 150px;
+  margin-right: 309px; 
+  padding: 0 15px;
 }
 
 /*=================================================================
@@ -500,6 +506,15 @@ nav {
   justify-content: space-around;
 }
 
+.card-container a {
+  padding: 15px 25px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.card-container a:nth-child(2) {
+  background-color: #4455C9b0;
+}
 /*=================================================================
   Footer section
 ==================================================================*/
