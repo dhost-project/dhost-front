@@ -90,7 +90,8 @@ contact = "Contact"
 # Hero Area Section
 [Languages.en.params.hero]
 enable  = true
-heading = "Decentralized hosting for your website"
+heading = "Decentralized hosting for your"
+headingWebsite = "website"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 button  = true
 btnGetStartedText = "Get Started"

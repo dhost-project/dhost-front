@@ -2,12 +2,16 @@
 <section class="hero-area">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 title">
         {{ with .Site.Params.hero.heading }}
         <span style="font-size: 3.5em; color: #fff">{{ . }}</span>
+        {{ end }} &nbsp; {{ with .Site.Params.hero.headingWebsite }}
+        <span class="coloredTitle" style="font-size: 3.5em; color: #fff"
+          >{{ . }}</span
+        >
         {{ end }}
       </div>
-      <div class="col-md-9">
+      <div class="col-md-9 titleDescription">
         {{ with .Site.Params.hero.description }}
         <p>{{ . }}</p>
         {{ end }}
@@ -44,15 +48,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
-        /* ========================================================================= */
-  /*	Particles
-		/* =========================================================================  */
-
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-
-		particlesJS.load("particles-js", "/particles.json", function () {
-		console.log("callback - particles.js config loaded");
-  })
+    particlesJS.load("particles-js", "/particles.json");
   </script>
 </section>
 {{ end }}
