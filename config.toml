@@ -1,4 +1,4 @@
-baseURL = "https://dhost-front.netlify.app"
+baseURL = "https://dhost-front.netlify.app/"
 languageCode = "en-us"
 title = "DHost"
 enableRobotsTXT = true
