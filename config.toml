@@ -92,7 +92,7 @@ contact = "Contact"
 enable  = true
 heading = "Decentralized hosting for your"
 headingWebsite = "website"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+description = "Dhost makes it easy to build websites and apps on the new open web: permissionless, trustless, censorship resistant, and free of centralized gatekeepers."
 button  = true
 btnGetStartedText = "Get Started"
 btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -107,37 +107,41 @@ videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 imagesFirstRow = ["wordpress.png", "jekyll.png", "publii.jpg", "docusaurus.svg", "11ty.png", "nuxtjs.png"]
 imagesSecondRow = ["angular-logo.png", "react.png", "vue.png", "hugo.jpg", "gatsby.jpg", "siteleaf.png"]
 
+# IPFS Explanation Section
+[Languages.en.params.ipfs]
+description = "IPFS allows users to host and receive content in a manner similar to BitTorrent. As opposed to a centrally located server, IPFS is built around a decentralized system of user-operators who hold a portion of the overall data, creating a resilient system of file storage and sharing. Any user in the network can serve a file by its content address, and other peers in the network can find and request that content from any node who has it using a distributed hash table (DHT)."
+
 # Why Dhost Section
 [Languages.en.params.whyDhost]
 
 [[Languages.en.params.whyDhost.perks]]
 name = "fast"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+text = "Rapide d'utilisation."
 image = "fast.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "decentralized"
-text = "Ipsum lorem dolor sit amet, consectetur adipiscing elit."
+text = "Intégration dans le réseau IPFS."
 image = "decentralized.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "security"
-text = "Secu lorem dolor sit amet, consectetur adipiscing elit."
+text = "Protection de vos informations."
 image = "security.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "rgpd"
-text = "RGPD lorem dolor sit amet, consectetur adipiscing elit."
+text = "Respect des normes RGPD."
 image = "rgpd.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "easy"
-text = "EZ lorem dolor sit amet, consectetur adipiscing elit."
+text = "Facile à utiliser."
 image = "easy.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "sci-fi"
-text = "FUTURE lorem dolor sit amet, consectetur adipiscing elit."
+text = "Entrez dans le futur du web avec dhost."
 image = "sci-fi.png"
 
 # Call to Action Section on About Page

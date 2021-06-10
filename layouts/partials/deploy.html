@@ -1,5 +1,5 @@
 <div class="deploy-partial">
-  <div class="card">
+  <div class="card" data-aos="fade-up">
     <div class="card-title">
       <h2>Deploy your own site</h2>
     </div>
@@ -8,12 +8,13 @@
         href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}"
         target="_blank"
         class="getStarted ripple"
+        style="padding: 15px 25px; border: 3px solid #6075e500"
         >{{ with .Site.Params.hero.btnGetStartedText }}{{.}}{{ end }}</a
       >
       <a
         href="{{ with .Site.Params.hero.btnLearnMoreURL }}{{.}}{{ end }}"
         target="_blank"
-        class="getStarted ripple"
+        class="getStarted ripple2"
         >{{ with .Site.Params.hero.btnLearnMoreText }}{{.}}{{ end }}</a
       >
     </div>

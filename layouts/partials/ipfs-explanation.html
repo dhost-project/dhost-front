@@ -1,33 +1,22 @@
 <div class="ipfs-partial">
-  <div class="ipfs-partialContent">
-    <div class="ipfs-title">
-      <h2>What's the IPFS ?</h2>
+  <div class="ipfs-partialContent" data-aos="fade-up">
+    <div>
+      <iframe
+        class="ipfs-video"
+        src="https://www.youtube.com/embed/5Uj6uR3fp-U"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
     </div>
     <div class="ipfs-mainContent">
-
+      <div class="ipfs-title">
+        <h2>What's the IPFS ?</h2>
+      </div>
       <p>
-        <iframe
-        class="ipfs-leftContent"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/5Uj6uR3fp-U"
-          frameborder="0"
-          gesture="media"
-          allow="encrypted-media"
-          allowfullscreen
-        ></iframe>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem
-          ipsum, accumsan at ex tempor, viverra laoreet turpis. Ut nec nulla eget
-          est sodales iaculis. Sed et convallis magna. Integer ullamcorper neque
-          eu pellentesque venenatis. Aliquam at tincidunt tortor. In egestas,
-          ipsum sit amet tincidunt gravida, nulla augue hendrerit libero, posuere
-          fringilla mi turpis vel turpis. Morbi ut faucibus leo. Praesent lacinia
-          faucibus justo sit amet condimentum.
-          Nulla eget feugiat metus. Curabitur bibendum nibh in magna egestas, quis
-          sagittis purus placerat. Sed at volutpat mauris, eu hendrerit mi.
+        <span class="ipfs-explanation-text">
+          {{ with .Site.Params.ipfs.description }}{{.}}{{ end }}
         </span>
-
       </p>
     </div>
   </div>

@@ -20,12 +20,20 @@
 <link rel="stylesheet" href="{{ `plugins/bootstrap/dist/css/bootstrap.min.css` | absURL }}">
 {{ "<!-- Lightbox.min css -->" | safeHTML }}
 <link rel="stylesheet" href="{{ `plugins/lightbox2/dist/css/lightbox.min.css` | absURL }}">
-{{ "<!-- Slick Carousel -->" | safeHTML }}
-<link rel="stylesheet" href="{{ `plugins/slick-carousel/slick/slick.css` | absURL }}">
-<link rel="stylesheet" href="{{ `plugins/slick-carousel/slick/slick-theme.css` | absURL }}">
 {{ "<!-- Main Stylesheet -->" | safeHTML }}
 
 {{ $styles := resources.Get "css/style.css" | minify}}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Mulish' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+<noscript>
+    <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+    </style>
+</noscript>
 </head>

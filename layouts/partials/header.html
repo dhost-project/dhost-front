@@ -13,9 +13,38 @@
           <div id="drapeaux">
             <!-- Pour passer la langue actuelle (variable globale) dans la range => explicitement -->
             {{ range .Site.Params.listeLangues }}
-            <!--//////////////////////////////////////////////////// -->
+            <!--/////////////////////////// -->
             {{ partial "flags.html" (dict "site" $.Site "liste" .) }} {{ end }}
           </div>
+          <a
+            href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}"
+            target="_blank"
+            class="getStarted ripple2"
+            style="
+              position: fixed;
+              right: 140px;
+              top: 15px;
+              color: #6075e5;
+              background-color: transparent;
+              font-weight: bold;
+              font-size: 18px;
+              padding: 10px 25px;
+            "
+            >Documentation</a
+          >
+          <a
+            href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}"
+            target="_blank"
+            class="getStarted ripple"
+            style="
+              position: fixed;
+              right: 25px;
+              top: 15px;
+              font-size: 18px;
+              padding: 10px 30px;
+            "
+            >Login</a
+          >
         </nav>
       </div>
     </div>
