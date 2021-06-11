@@ -116,32 +116,32 @@ description = "IPFS allows users to host and receive content in a manner similar
 
 [[Languages.en.params.whyDhost.perks]]
 name = "fast"
-text = "Rapide d'utilisation."
+text = "Quick to set up"
 image = "fast.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "decentralized"
-text = "Intégration dans le réseau IPFS."
+text = "Integration into the IPFS network"
 image = "decentralized.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "security"
-text = "Protection de vos informations."
+text = "Protection of your information"
 image = "security.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "rgpd"
-text = "Respect des normes RGPD."
+text = "Compliance with RGPD standards"
 image = "rgpd.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "easy"
-text = "Facile à utiliser."
+text = "Easy to use"
 image = "easy.png"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "sci-fi"
-text = "Entrez dans le futur du web avec dhost."
+text = "Enter the future of the web with DHost"
 image = "sci-fi.png"
 
 # Call to Action Section on About Page
