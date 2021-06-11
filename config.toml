@@ -5,6 +5,7 @@ enableRobotsTXT = true
 enableGitInfo = false
 
 
+
 # Multilangues setup
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
 defaultContentLanguageInSubdir = true
@@ -98,6 +99,11 @@ image = "sci-fi.png"
 [Languages.fr.params.deploy]
 title = "Déployer votre propre site"
 
+# Footer
+[Languages.fr.params.footer]
+legalNotice = "Mentions légales"
+privacyPolicy = "Politique de confidentialité"
+
 ############# 2 - Site in ENGLISH
 [Languages.en]
 languageCode = "en-us"
@@ -175,3 +181,8 @@ image = "sci-fi.png"
 # Deploy Section
 [Languages.en.params.deploy]
 title = "Deploy your own site"
+
+# Footer
+[Languages.en.params.footer]
+legalNotice = "Legal Notice"
+privacyPolicy = "Privacy Policy"
