@@ -1,0 +1,26 @@
+{{ if .Site.Params.Hero.enable }} {{ "<!-- Hero Area -->" | safeHTML }}
+<section class="footer">
+  <div class="container">
+      <div class="row">
+        <div>
+            <hr />
+        </div>
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.Params.logo | absURL }}" alt="logo" />
+        </a>
+        <p>Copyright © 2021 DHost, Inc.</p>
+        <div>
+            <a href="{{ .Site.BaseURL }}">
+                Mentions légales
+            </a>
+            <span>
+                &nbsp;l&nbsp;
+            </span>
+            <a href="{{ .Site.BaseURL }}">
+                Politique de confidentialité
+            </a>
+        </div>
+    </div>
+  </div>
+</section>
+{{ end }}

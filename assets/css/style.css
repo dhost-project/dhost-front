@@ -124,6 +124,12 @@ nav {
 
 .navbar {
   padding: 10px 18px;
+  background-color: #222222 !important;
+  transition: background-color 400ms linear;
+}
+
+.navbar.notScrolled {
+  background-color: transparent !important;
 }
 
 .navbar-brand h1 {
@@ -576,84 +582,32 @@ nav {
 /*=================================================================
   Footer section
 ==================================================================*/
-.top-footer {
-  background-color: #222222;
-  border-top: 1px solid #404040;
-  padding: 100px 0 80px;
-}
 
-.top-footer h3 {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-.top-footer p {
-  font-size: 13px;
-  line-height: 30px;
-  color: #bdbdbd;
-  font-weight: 300;
-  padding-right: 20px;
-}
-
-.top-footer li a {
-  font-size: 13px;
-  line-height: 30px;
-  color: #bdbdbd;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  transition: color 0.3s;
-  font-family: "Titillium Web", sans-serif;
-  display: block;
-}
-
-.top-footer li a:hover {
-  color: #f0326b;
-}
-
-.footer-bottom {
+.footer {
+  padding: 1px 0 10px 0;
+  background-color: #444;
   text-align: center;
-  background-color: #1b1b1b;
-  border-top: 1px solid #2c2c2c;
-  padding: 30px 0;
 }
 
-.footer-bottom h5 {
-  font-size: 12px;
-  line-height: 1;
-  color: #888888;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 7px;
-  margin-bottom: 3px;
+.footer span {
+  color: #ccc !important;
+}
+.footer a {
+  color: #ccc !important;
 }
 
-.footer-bottom h6 {
-  font-size: 11px;
-  line-height: 15px;
-  color: #888888;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  margin-bottom: 0;
+.footer div {
+  margin: 0 80px;
+  color: #000 !important;
 }
 
-.footer-bottom p {
-  color: #656565;
-}
+.footer hr { display: block; height: 1px;
+  border: 0; border-top: 2px solid #999;
+  margin: 1em 0; padding: 0; }
 
-.footer-bottom a {
-  color: #f0326b;
-}
-
-.subscribe-form .form-control {
-  border-radius: 0;
+.footer p {
+  margin: 0;
+  color: #ddd;
 }
 
 .page-404 {
