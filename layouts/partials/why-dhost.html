@@ -2,7 +2,7 @@
 <div class="whydhost-partial" style="background-color: transparent;">
     <div class="whydhost-partialContent">
         <div class="whydhost-title">
-            <h2>Why Dhost ?</h2>
+            <h2>{{ with .Site.Params.whydhost.title }}{{ . }}{{ end }}</h2>
         </div>
         <div class="whydhost-mosaicContainer">
             {{ range $perk := .Site.Params.whyDhost.perks }}

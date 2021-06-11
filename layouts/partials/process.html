@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col">
       <div class="title text-center">
-        <h2>Decentralyze your app</h2>
+        <h2>{{ with .Site.Params.process.title }}{{ . }}{{ end }}</h2>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
           </svg>
           <h3>Upload</h3>
         </div>
-        <p class="upload-txt">Choose the source of your website</p>
+        <p class="upload-txt">{{ with .Site.Params.process.uploadText }}{{ . }}{{ end }}</p>
         <div class="upload-content">
           <img
             class="upload-image"
@@ -51,7 +51,7 @@
       />
       <div class="process-item" data-aos="fade-up">
         <div id="build-title" class="item-title">
-          <h3>Check build options</h3>
+          <h3>{{ with .Site.Params.process.buildTitle }}{{ . }}{{ end }}</h3>
           <svg height="24" width="24">
             <circle
               cx="12"
@@ -64,7 +64,7 @@
           </svg>
         </div>
         <p class="build-txt">
-          Adapt your settings to mold your site deployment
+          {{ with .Site.Params.process.buildText }}{{ . }}{{ end }}
         </p>
         <img src="/imgs/process/build.png" alt="build" class="build-img" />
         <img
@@ -92,11 +92,11 @@
               fill="#EEE"
             />
           </svg>
-          <h3>Deploy</h3>
+          <h3>{{ with .Site.Params.process.deployTitle }}{{ . }}{{ end }}</h3>
         </div>
-        <p class="deploy-txt">Deploy your website on IPFS</p>
+        <p class="deploy-txt">{{ with .Site.Params.process.deployText }}{{ . }}{{ end }}</p>
         <button class="getStarted process-getStarted ripple">
-          Get Started
+          {{ with .Site.Params.hero.btnGetStartedText }}{{ . }}{{ end }}
         </button>
         <img
           class="deploy-bg-image"

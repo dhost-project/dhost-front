@@ -18,74 +18,93 @@ logo = "/imgs/dhostlogo.png"
 author = "Dhost"
 description = "Dhost"
 
-# Gestion des langues : FR / EN / NL / DE
+# Gestion des langues : FR / EN
 [Languages]
 ############ 1 - Site en FRANCAIS
 [Languages.fr]
-weight = 1
 languageCode = "fr-fr"
 title = "Dhost"
-dateFormat = "20 March 2021"
-
-home = "FR Home"
+dateFormat = "2 Janvier 2006"
+home = "EN Home"
 logo = "/imgs/dhostlogo.png"
-menufixed = false
-
-footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "FRANCAIS Services"
-footerQuicklinkTitle = "FRANCAIS Quick links"
-footerAboutTitle = "FRANCAIS About"
-footerSubscribeTitle = "FRANCAIS Subscribe"
-
-
-# Navbar
-[Languages.fr.params.navbar]
-dashboard = "TABLO"
-about = "About"
-discover = "Discover"
-contact = "Contact"
 
 # Hero Area Section
 [Languages.fr.params.hero]
 enable  = true
-heading = "FRANCAIS We love to make brands grow and break dem after"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+heading = "Hébergement décentralisé pour votre"
+headingWebsite = "site web"
+description = "Dhost facilite la création de sites web et d'applications sur le nouveau web ouvert : sans permission, sans confiance, résistant à la censure et libre de tout contrôle centralisé."
 button  = true
-btnText = "Know More"
-btnURL  = "https://themefisher.com/"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+btnGetStartedText = "Commencer"
+btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnLearnMoreText = "En savoir plus"
+btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
+# Deploy Section
+[Languages.fr.params.process]
+title = "Décentraliser votre app"
+uploadText = "Choisissez la source de votre site web"
+buildTitle = "Choisissez les options de build"
+buildText = "Adaptez vos paramètres pour préparer le déploiement de votre site"
+deployTitle = "Déployer"
+deployText = "Déployer votre site web sur l'IPFS"
 
-############# 2 - Site en ENGLISH
+# Frameworks Area Section
+[Languages.fr.params.frameworks]
+title = "De nombreux sites et frameworks sont pris en charge"
+imagesFirstRow = ["wordpress.png", "jekyll.png", "publii.jpg", "docusaurus.svg", "11ty.png", "nuxtjs.png"]
+imagesSecondRow = ["angular-logo.png", "react.png", "vue.png", "hugo.jpg", "gatsby.jpg", "siteleaf.png"]
+
+# IPFS Explanation Section
+[Languages.fr.params.ipfs]
+title = "C'est quoi l'IPFS ?"
+description = "IPFS permet aux utilisateurs d'héberger et de recevoir du contenu d'une manière similaire à BitTorrent. Par opposition à un serveur central, IPFS est construit autour d'un système décentralisé d'utilisateurs-opérateurs qui détiennent une partie de l'ensemble des données, créant ainsi un système résilient de stockage et de partage de fichiers. Tout utilisateur du réseau peut servir un fichier par son adresse de contenu, et les autres pairs du réseau peuvent trouver et demander ce contenu à tout nœud qui le possède en utilisant une table de hachage distribuée (DHT)."
+
+# Why Dhost Section
+[Languages.fr.params.whyDhost]
+title = "Pourquoi DHost ?"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "fast"
+text = "Rapide à mettre en place"
+image = "fast.png"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "decentralized"
+text = "Intégration dans le réseau IPFS"
+image = "decentralized.png"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "security"
+text = "Protection de vos informations"
+image = "security.png"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "rgpd"
+text = "Conformité aux normes RGPD"
+image = "rgpd.png"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "easy"
+text = "Facile d'utilisation"
+image = "easy.png"
+
+[[Languages.fr.params.whyDhost.perks]]
+name = "sci-fi"
+text = "Entrez dans le futur du web avec DHost"
+image = "sci-fi.png"
+
+# Deploy Section
+[Languages.fr.params.deploy]
+title = "Déployer votre propre site"
+
+############# 2 - Site in ENGLISH
 [Languages.en]
-weight = 2
 languageCode = "en-us"
 title = "Dhost"
 dateFormat = "January 2, 2006"
 home = "EN Home"
 logo = "/imgs/dhostlogo.png"
-menufixed = false
-
-footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-footerServiceTitle = "Service"
-footerQuicklinkTitle = "Quicklinks"
-footerAboutTitle = "About"
-footerSubscribeTitle = "Subscribe"
-
-
-# cookies
-[params.cookies]
-enable = false
-expire_days = 2
-
-# Navbar
-[Languages.en.params.navbar]
-dashboard = "Dashboard"
-about = "About"
-discover = "Discover"
-contact = "Contact"
-
 
 # Hero Area Section
 [Languages.en.params.hero]
@@ -98,21 +117,30 @@ btnGetStartedText = "Get Started"
 btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 btnLearnMoreText = "Learn More"
 btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-videoThumb = "images/slider/video-player-thumb.jpg"
-videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
+# Deploy Section
+[Languages.en.params.process]
+title = "Decentralyze your app"
+uploadText = "Choose the source of your website"
+buildTitle = "Check build options"
+buildText = "Adapt your settings to mold your site deployment"
+deployTitle = "Deploy"
+deployText = "Deploy your website on IPFS"
 
 # Frameworks Area Section
 [Languages.en.params.frameworks]
+title = "Many sites and frameworks are supported"
 imagesFirstRow = ["wordpress.png", "jekyll.png", "publii.jpg", "docusaurus.svg", "11ty.png", "nuxtjs.png"]
 imagesSecondRow = ["angular-logo.png", "react.png", "vue.png", "hugo.jpg", "gatsby.jpg", "siteleaf.png"]
 
 # IPFS Explanation Section
 [Languages.en.params.ipfs]
+title = "What's the IPFS ?"
 description = "IPFS allows users to host and receive content in a manner similar to BitTorrent. As opposed to a centrally located server, IPFS is built around a decentralized system of user-operators who hold a portion of the overall data, creating a resilient system of file storage and sharing. Any user in the network can serve a file by its content address, and other peers in the network can find and request that content from any node who has it using a distributed hash table (DHT)."
 
 # Why Dhost Section
 [Languages.en.params.whyDhost]
+title = "Why DHost ?"
 
 [[Languages.en.params.whyDhost.perks]]
 name = "fast"
@@ -144,68 +172,6 @@ name = "sci-fi"
 text = "Enter the future of the web with DHost"
 image = "sci-fi.png"
 
-# Call to Action Section on About Page
-[Languages.en.params.cta]
-enable  = true
-bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "Let's Create Something Together"
-subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-btnText = "Contact Us"
-
-# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
-
-# Site Menus
-[menu]
-# Navbar Menus
-[[menu.nav]]
-name    = "about"
-url     = "about"
-weight  = 2
-[[menu.nav]]
-name    = "service"
-url     = "service"
-weight  = 3
-[[menu.nav]]
-name    = "portfolio"
-url     = "portfolio"
-weight  = 4
-[[menu.nav]]
-name    = "blog"
-url     = "blog"
-weight  = 5
-[[menu.nav]]
-name    = "contact"
-url     = "contact"
-weight  = 6
-
-# Footer Service Menu
-[[menu.service]]
-name    = "graphicdesign"
-url     = "service"
-weight  = 1
-[[menu.service]]
-name    = "webdesign"
-url     = "service"
-weight  = 2
-[[menu.service]]
-name    = "webdevelopment"
-url     = "service"
-weight  = 3
-
-# Footer Quick links Menu
-[[menu.quicklink]]
-name    = "partners"
-url     = "about"
-weight  = 1
-[[menu.quicklink]]
-name    = "about"
-url     = "about"
-weight  = 2
-[[menu.quicklink]]
-name    = "faqs"
-url     = "about"
-weight  = 3
-[[menu.quicklink]]
-name    = "badges"
-url     = "about"
-weight  = 4
+# Deploy Section
+[Languages.en.params.deploy]
+title = "Deploy your own site"
