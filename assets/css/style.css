@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700%22");
+
+/*=================================================================
+  General style
+==================================================================*/
+
 body {
   line-height: 1.4;
   font-family: "Questrial", sans-serif;
@@ -29,6 +34,10 @@ h6 {
 ul {
   list-style-type: none;
 }
+
+/*=================================================================
+  Buttons
+==================================================================*/
 
 .getStarted {
   position: relative;
@@ -115,6 +124,10 @@ ul {
 .btn-transparent:hover {
   color: #fff;
 }
+
+/*=================================================================
+  Header
+==================================================================*/
 
 nav {
   position: fixed;
@@ -542,7 +555,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3em;
-  padding-bottom: 6em;
+  padding-bottom: 3em;
 }
 .deploy-partial > .card {
   text-align: center;
