@@ -11,13 +11,13 @@
         <p>Copyright © 2021 DHost, Inc.</p>
         <div>
             <a href="{{ .Site.BaseURL }}">
-                Mentions légales
+                {{ with .Site.Params.footer.legalNotice }}{{.}}{{ end }}
             </a>
             <span>
                 &nbsp;l&nbsp;
             </span>
             <a href="{{ .Site.BaseURL }}">
-                Politique de confidentialité
+                {{ with .Site.Params.footer.privacyPolicy }}{{.}}{{ end }}
             </a>
         </div>
     </div>
