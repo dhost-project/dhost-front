@@ -1,4 +1,4 @@
-baseURL = "https://dhost.dev"
+# baseURL = "https://dhost.dev"
 languageCode = "en-us"
 title = "DHost"
 enableRobotsTXT = true
