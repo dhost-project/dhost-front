@@ -5,20 +5,20 @@
       <div>
         <hr />
       </div>
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+      <span class="navbar-brand">
         <img
           src="{{ .Site.Params.logo | absURL }}"
           alt="logo"
           style="width: 160px; height: 80px; transform: scale(4.5)"
         />
-      </a>
+      </span>
       <p>Copyright © 2021 DHost, Inc.</p>
       <div>
-        <a href="https://dhost-legal.netlify.app">
+        <a href="https://dhost-legal.netlify.app" style="z-index: 100">
           {{ with .Site.Params.footer.legalNotice }}{{.}}{{ end }}
         </a>
         <span> &nbsp;l&nbsp; </span>
-        <a href="https://dhost-legal.netlify.app">
+        <a href="https://dhost-legal.netlify.app" style="z-index: 100">
           {{ with .Site.Params.footer.privacyPolicy }}{{.}}{{ end }}
         </a>
       </div>
