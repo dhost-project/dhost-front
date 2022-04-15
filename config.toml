@@ -11,7 +11,7 @@ DefaultContentLanguage = "en"
 
 # Site Params
 [params]
-logo = "/imgs/dhostlogo.png"
+logo = "/imgs/dhostlogo.jpg"
 
 # meta data
 author = "Dhost"
@@ -25,7 +25,7 @@ languageCode = "fr-fr"
 title = "Dhost"
 dateFormat = "2 Janvier 2006"
 home = "EN Home"
-logo = "/imgs/dhostlogo.png"
+logo = "/imgs/dhostlogo.jpg"
 
 # Hero Area Section
 [Languages.fr.params.hero]
@@ -35,9 +35,9 @@ headingWebsite = "site web"
 description = "Dhost facilite la création de sites web et d'applications sur le nouveau web ouvert : sans permission, sans confiance, résistant à la censure et libre de tout contrôle centralisé."
 button  = true
 btnGetStartedText = "Commencer"
-btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnGetStartedURL  = "http://localhost:8000"
 btnLearnMoreText = "En savoir plus"
-btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnLearnMoreURL  = "http://localhost:8000"
 
 # Deploy Section
 [Languages.fr.params.process]
@@ -108,7 +108,7 @@ languageCode = "en-us"
 title = "Dhost"
 dateFormat = "January 2, 2006"
 home = "EN Home"
-logo = "/imgs/dhostlogo.png"
+logo = "/imgs/dhostlogo.jpg"
 
 # Hero Area Section
 [Languages.en.params.hero]
@@ -118,9 +118,9 @@ headingWebsite = "website"
 description = "Dhost makes it easy to build websites and apps on the new open web: permissionless, trustless, censorship resistant, and free of centralized gatekeepers."
 button  = true
 btnGetStartedText = "Get Started"
-btnGetStartedURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnGetStartedURL  = "http://localhost:8000"
 btnLearnMoreText = "Learn More"
-btnLearnMoreURL  = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+btnLearnMoreURL  = "http://localhost:8000"
 
 # Deploy Section
 [Languages.en.params.process]

@@ -1,25 +1,23 @@
 {{ if .Site.Params.Hero.enable }} {{ "<!-- Hero Area -->" | safeHTML }}
 <section class="footer">
   <div class="container">
-      <div class="row">
-        <div>
-            <hr />
-        </div>
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-            <img src="{{ .Site.Params.logo | absURL }}" alt="logo" />
+    <div class="row">
+      <div>
+        <hr />
+      </div>
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <img src="{{ .Site.Params.logo | absURL }}" alt="logo" />
+      </a>
+      <p>Copyright © 2021 DHost, Inc.</p>
+      <div>
+        <a href="{{ .Site.BaseURL }}/privacy">
+          {{ with .Site.Params.footer.legalNotice }}{{.}}{{ end }}
         </a>
-        <p>Copyright © 2021 DHost, Inc.</p>
-        <div>
-            <a href="{{ .Site.BaseURL }}">
-                {{ with .Site.Params.footer.legalNotice }}{{.}}{{ end }}
-            </a>
-            <span>
-                &nbsp;l&nbsp;
-            </span>
-            <a href="{{ .Site.BaseURL }}">
-                {{ with .Site.Params.footer.privacyPolicy }}{{.}}{{ end }}
-            </a>
-        </div>
+        <span> &nbsp;l&nbsp; </span>
+        <a href="{{ .Site.BaseURL }}/privacy">
+          {{ with .Site.Params.footer.privacyPolicy }}{{.}}{{ end }}
+        </a>
+      </div>
     </div>
   </div>
 </section>
