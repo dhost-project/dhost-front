@@ -42,7 +42,7 @@
             {{ partial "flags.html" (dict "site" $.Site "liste" .) }} {{ end }}
           </div>
           <a
-            href="{{ with .Site.Params.hero.btnGetStartedUrl }}{{.}}{{ end }}"
+            href="{{ with .Site.Params.hero.btnLogin }}{{.}}{{ end }}"
             target="_blank"
             class="getStarted ripple2"
             style="

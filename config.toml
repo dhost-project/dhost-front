@@ -119,6 +119,7 @@ description = "Dhost makes it easy to build websites and apps on the new open we
 button  = true
 btnGetStartedText = "Get Started"
 btnGetStartedURL  = "http://localhost:8000/get_started"
+btnLogin  = "http://localhost:8000"
 btnLearnMoreText = "Learn More"
 btnLearnMoreURL  = "http://localhost:8000"
 
