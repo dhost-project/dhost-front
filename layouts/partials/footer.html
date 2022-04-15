@@ -1,5 +1,5 @@
 {{ if .Site.Params.Hero.enable }} {{ "<!-- Hero Area -->" | safeHTML }}
-<section class="footer">
+<section class="footer" style="overflow: hidden">
   <div class="container">
     <div class="row">
       <div>
@@ -9,7 +9,7 @@
         <img
           src="{{ .Site.Params.logo | absURL }}"
           alt="logo"
-          style="width: 160px; height: 80px"
+          style="width: 160px; height: 80px; transform: scale(4.5)"
         />
       </a>
       <p>Copyright © 2021 DHost, Inc.</p>
