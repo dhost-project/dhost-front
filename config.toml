@@ -118,7 +118,7 @@ headingWebsite = "website"
 description = "Dhost makes it easy to build websites and apps on the new open web: permissionless, trustless, censorship resistant, and free of centralized gatekeepers."
 button  = true
 btnGetStartedText = "Get Started"
-btnGetStartedURL  = "http://localhost:8000"
+btnGetStartedURL  = "http://localhost:8000/get_started"
 btnLearnMoreText = "Learn More"
 btnLearnMoreURL  = "http://localhost:8000"
 
